@@ -1,0 +1,759 @@
+\# Program start time UTC 2022.06.01 16:06:03.911
+\# Local time Wednesday 1 June 2022, 12:06 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 09/01/2015 22:56 (sjfnl132) $
+\o Hierarchy:		/opt/cadence/IC616/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.6-64b.500.13.2  (64-bit addresses)
+\# Command line:	/opt/cadence/IC616/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso27209 -mpshost xunil-03.coe.drexel.edu -davinciService DaVinciService_27209_1654097260 -log /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/logs_njs82/logs0/Job3.log -licenseLockFileName /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/.tmp_njs82/.xunil-03.coe.drexel.edu_27209 -nograph -nostdin -axlChildIdFlag 3
+\# Host name (type):	xunil-03.coe.drexel.edu (x86_64)
+\# Operating system:	Linux 3.10.0-1160.59.1.el7.x86_64 #1 SMP Wed Feb 23 16:47:03 UTC 2022
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	xunil-03.coe.drexel.edu:80 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 12445)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        333 MB
+\# Available memory:	    122,280 MB
+\# System memory:	    144,753 MB
+\# Maximum memory size:	    144,489 MB
+\# Max mem available:	    122,350 MB
+\# Initial memory used:	         70 MB
+\#        process size:	        764 MB
+\# Qt version:		4.7.2
+\# Window Manager:	other
+\# User Name:		njs82
+\o Working Directory:	xunil-03.coe.drexel.edu:/home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45
+\# Process Id:		12650
+\o 
+\o COPYRIGHT © 1992-2015  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2015  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt.
+\o PVS: IPVS cannot be started in nographic mode
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectrei.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\# Memory report: using         190 MB, process size 1,015 MB at UTC 2022.06.01 16:06:06.532
+\o //
+\o //  Calibre Skill Interface * (v2015.3_25.16) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /mnt/class_data/ecec571-f2015/PDKs/NCSU_FreePDK45/ncsu_basekit/cdssetup/cdsenv for tool layout
+\o ---------------------------------------------------------------------------
+\o Welcome to the FreePDK 45nm Free, Open-Source Process Design Kit
+\o 
+\o This initiative is brought to you by the Semiconductor Research
+\o Corporation (SRC), the National Science Foundation (NSF), Silicon
+\o Integration Initiative (Si2), Mentor Graphics, and Synopsys.
+\o 
+\o This version of the kit was created by Rhett Davis, Paul Franzon,
+\o Michael Bucher, Sunil Basavarajaiah, and Harun Demircioglu
+\o of North Carolina State University, and James Stine and Ivan Castellanos
+\o of Oklahoma State University.
+\o 
+\o Contributions and modifications to this kit are welcomed and encouraged.
+\o 
+\o Copyright 2007 - W. Rhett Davis, Paul Franzon, Michael Bucher,
+\o                  and Sunil Basavarajaiah, North Carolina State University
+\o Copyright 2008 - W. Rhett Davis, Michael Bucher, and Sunil Basavarajaiah,
+\o                  North Carolina State University (ncsu_basekit subtree)
+\o                  James Stine, and Ivan Castellanos,
+\o                  and Oklahoma State University (osu_soc subtree)
+\o Copyright 2011 - W. Rhett Davis, and Harun Demircioglu,
+\o                  North Carolina State University
+\o 
+\o Licensed under the Apache License, Version 2.0 (the "License");
+\o you may not use this file except in compliance with the License.
+\o You may obtain a copy of the License at
+\o 
+\o     http://www.apache.org/licenses/LICENSE-2.0
+\o 
+\o Unless required by applicable law or agreed to in writing, software
+\o distributed under the License is distributed on an "AS IS" BASIS,
+\o WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+\o See the License for the specific language governing permissions and
+\o limitations under the License.
+\o ---------------------------------------------------------------------------
+\o 
+\o Done loading FreePDK customizations.
+\e *Error* lineread/read: syntax error encountered in input at line 67 column 19 in file .cdsinit
+\e 
+\e asimenv" "saveDir" 'string "./.artist_states")
+\e          ^
+\e SYNTAX ERROR found at line 68 column 10 of file .cdsinit
+\e *Error* lineread/read: syntax error encountered in input
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = ECEC573_Lib
+\o 	Cell         = power_delivery_network
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ECEC573_Lib:power_delivery_network:1_state1_Interactive.1
+\o 	Results DB   = /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/1/ECEC573_Lib:power_delivery_network:1
+\o 	Results Loc  = /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data
+\o 	Project Dir  = /home/njs82@drexel.edu/simulation
+\o 	Setup DB loc = /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Ipk = "0"
+\o Setting var decap = "1a"
+\o Setting var decap15 = "1a"
+\o Setting var decap30 = "1a"
+\o Setting var decap5 = "1a"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/1/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/1/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Begin Incremental Netlisting Jun  1 12:06:10 2022
+\o WARNING (OSSHNL-225): The design variable 'ACMag', used in the last netlisting session in the current
+\o run directory is not used in this netlisting session. The netlist(s) generated
+\o in the last netlisting session cannot be reused for incremental netlisting.
+\o Therefore re-netlisting the design.
+\o 
+\# Memory report: using         290 MB, process size 1,115 MB at UTC 2022.06.01 16:06:11.117
+\# Available memory:        122,033 MB at UTC 2022.06.01 16:06:14.124
+\# Memory report: Maximum memory size now 122,340 MB at UTC 2022.06.01 16:06:14.124
+\o End netlisting Jun  1 12:06:19 2022
+\o Loading monte.cxt 
+\o 
+\o Netlisting Statistics:
+\o 	Number of components: 36248
+\o 
+\o 	Elapsed time:          9.0s (4027.56/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (1 1).
+\o 
+\o Delete psf data in /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/1/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre in `local_2000u_2000u':`I6', during
+\o           hierarchy flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o ERROR (SFE-1997): "input.scs" 30729: I6.I5392:
+\o           parameter `mag': Cannot run the simulation because
+\o           parameter 'Imag' has been used but no value has been
+\o 
+\o           assigned to it. Assign a value to the parameter and rerun
+\o           the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o ERROR (SFE-1997): "input.scs"
+\o           30733: I6.I5391: parameter `mag': Cannot run the simulation
+\o           because parameter 'Imag' has been used but no value has
+\o           been
+\o  assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o ERROR (SFE-1997): "input.scs"
+\o           30737: I6.I5390: parameter `mag': Cannot run the simulation
+\o           because parameter 'Imag' has been used but no value has
+\o           been
+\o  assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30737:
+\o           I6.I5390: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30737:
+\o           I6.I5390: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o ERROR (SFE-1997): "input.scs"
+\o           30741: I6.I5389: parameter `mag': Cannot run the simulation
+\o           because parameter 'Imag' has been used but no value has
+\o           been
+\o  assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30741:
+\o           I6.I5389: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30741:
+\o           I6.I5389: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Ipk = "0"
+\o Setting var decap = "1a"
+\o Setting var decap15 = "1a"
+\o Setting var decap30 = "1a"
+\o Setting var decap5 = "1a"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/1/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/1/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  1 12:06:27 2022
+\o End netlisting Jun  1 12:06:28 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   2.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (1 1).
+\o 
+\o Delete psf data in /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/1/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre in `local_2000u_2000u':`I6', during
+\o           hierarchy flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o ERROR (SFE-1997): "input.scs" 30729: I6.I5392:
+\o           parameter `mag': Cannot run the simulation because
+\o           parameter 'Imag' has been used but no value has been
+\o 
+\o           assigned to it. Assign a value to the parameter and rerun
+\o           the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o ERROR (SFE-1997): "input.scs"
+\o           30733: I6.I5391: parameter `mag': Cannot run the simulation
+\o           because parameter 'Imag' has been used but no value has
+\o           been
+\o  assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o ERROR (SFE-1997): "input.scs"
+\o           30737: I6.I5390: parameter `mag': Cannot run the simulation
+\o           because parameter 'Imag' has been used but no value has
+\o           been
+\o  assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30737:
+\o           I6.I5390: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30737:
+\o           I6.I5390: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o ERROR (SFE-1997): "input.scs"
+\o           30741: I6.I5389: parameter `mag': Cannot run the simulation
+\o           because parameter 'Imag' has been used but no value has
+\o           been
+\o  assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30741:
+\o           I6.I5389: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30741:
+\o           I6.I5389: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Ipk = "iPar(\"DCCur\")"
+\o Setting var decap = "1a"
+\o Setting var decap15 = "1a"
+\o Setting var decap30 = "1a"
+\o Setting var decap5 = "1a"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/2/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/2/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  1 12:06:35 2022
+\o End netlisting Jun  1 12:06:36 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (1 2).
+\o 
+\o Delete psf data in /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/2/ECEC573_Lib:power_delivery_network:1/psf.
+\w *WARNING* "lineage" not defined for CDF pPar function
+\w *WARNING* asiiEvalDesignValList: problem with variable Ipk
+\w 
+\o *Error*   in the Design Variables.  AEL's message:  invalid operand: 
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre during hierarchy flattening.
+\o Error
+\o           found by spectre during hierarchy flattening.
+\o ERROR
+\o           (SFE-1996): "input.scs" 8: Parameter `Ipk': Cannot run the
+\o           simulation because an unknown parameter `DCCur' has been
+\o           specified in expression `iPa
+\o r("DCCur")'. Correct the
+\o           expression and rerun the simulation.
+\o Error found by spectre
+\o           in `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o ERROR (SFE-1997): "input.scs" 30729: I6.I5392:
+\o           parameter `mag': Cannot run the simulation because
+\o           parameter 'Imag' has been used but no value has been
+\o 
+\o           assigned to it. Assign a value to the parameter and rerun
+\o           the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o ERROR (SFE-1996): "input.scs" 8:
+\o           Parameter `Ipk': Cannot run the simulation because an
+\o           unknown parameter `DCCur' has been specified in expression
+\o           `iPa
+\o r("DCCur")'. Correct the expression and rerun the
+\o           simulation.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o ERROR (SFE-1997): "input.scs" 30733: I6.I5391:
+\o           parameter `mag': Cannot run the simulation because
+\o           parameter 'Imag' has been used but no value has been
+\o 
+\o           assigned to it. Assign a value to the parameter and rerun
+\o           the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o ERROR (SFE-1996): "input.scs" 8:
+\o           Parameter `Ipk': Cannot run the simulation because an
+\o           unknown parameter `DCCur' has been specified in expression
+\o           `iPa
+\o r("DCCur")'. Correct the expression and rerun the
+\o           simulation.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy flattening.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Ipk = "iPar(\"DCCur\")"
+\o Setting var decap = "1a"
+\o Setting var decap15 = "1a"
+\o Setting var decap30 = "1a"
+\o Setting var decap5 = "1a"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/2/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/2/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  1 12:06:42 2022
+\o End netlisting Jun  1 12:06:43 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (1 2).
+\o 
+\o Delete psf data in /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.1/2/ECEC573_Lib:power_delivery_network:1/psf.
+\w *WARNING* "lineage" not defined for CDF pPar function
+\w *WARNING* asiiEvalDesignValList: problem with variable Ipk
+\w 
+\o *Error*   in the Design Variables.  AEL's message:  invalid operand: 
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre during hierarchy flattening.
+\o Error
+\o           found by spectre during hierarchy flattening.
+\o ERROR
+\o           (SFE-1996): "input.scs" 8: Parameter `Ipk': Cannot run the
+\o           simulation because an unknown parameter `DCCur' has been
+\o           specified in expression `iPa
+\o r("DCCur")'. Correct the
+\o           expression and rerun the simulation.
+\o Error found by spectre
+\o           in `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o ERROR (SFE-1997): "input.scs" 30729: I6.I5392:
+\o           parameter `mag': Cannot run the simulation because
+\o           parameter 'Imag' has been used but no value has been
+\o 
+\o           assigned to it. Assign a value to the parameter and rerun
+\o           the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30729:
+\o           I6.I5392: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o ERROR (SFE-1996): "input.scs" 8:
+\o           Parameter `Ipk': Cannot run the simulation because an
+\o           unknown parameter `DCCur' has been specified in expression
+\o           `iPa
+\o r("DCCur")'. Correct the expression and rerun the
+\o           simulation.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o ERROR (SFE-1997): "input.scs" 30733: I6.I5391:
+\o           parameter `mag': Cannot run the simulation because
+\o           parameter 'Imag' has been used but no value has been
+\o 
+\o           assigned to it. Assign a value to the parameter and rerun
+\o           the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `phase': Cannot run the simulation
+\o           because parameter 'Iphase' has been used but no value has
+\o           
+\o been assigned to it. Assign a value to the parameter and
+\o           rerun the simulation.
+\o ERROR (SFE-1997): "input.scs" 30733:
+\o           I6.I5391: parameter `noisefile': Cannot run the simulation
+\o           because parameter 'NoiseFile' has been used but no val
+\o ue
+\o           has been assigned to it. Assign a value to the parameter
+\o           and rerun the simulation.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o Error found by spectre during
+\o           hierarchy flattening.
+\o ERROR (SFE-1996): "input.scs" 8:
+\o           Parameter `Ipk': Cannot run the simulation because an
+\o           unknown parameter `DCCur' has been specified in expression
+\o           `iPa
+\o r("DCCur")'. Correct the expression and rerun the
+\o           simulation.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy
+\o           flattening.
+\o Error found by spectre in
+\o           `local_2000u_2000u':`I6', during hierarchy flattening.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o Loading lce.cxt 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 

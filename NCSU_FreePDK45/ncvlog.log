@@ -1,0 +1,20 @@
+ncvlog: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+TOOL:	ncvlog(64)	15.10-s002: Started on Mar 02, 2021 at 10:24:04 EST
+ncvlog
+    -use5x
+    -work __nclib
+    -view module
+    -logfile ncvlog.log
+    -cdslib /tmp/ihdl_cdslibb5100_15100
+    -messages
+    -nostdout
+    -nocopyright
+    -ESCAPEDNAME
+    /home/njs82@drexel.edu/ECEC472/ring_counter_el.v
+
+file: /home/njs82@drexel.edu/ECEC472/ring_counter_el.v
+	module __nclib.ring_counter:module
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	ncvlog(64)	15.10-s002: Exiting on Mar 02, 2021 at 10:24:04 EST  (total: 00:00:00)

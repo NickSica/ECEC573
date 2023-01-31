@@ -1,0 +1,49 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.6 - CAT33 07/09/2015 16:05 (sjfnl733) $
+\o Sub version:		sub-version  s018 
+\o Arguments:		-cdslib /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/cds.lib -mpssession virtuoso1547 -mpshost xunil-03.coe.drexel.edu 
+\o Working Directory:	xunil-03.coe.drexel.edu:/home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.7.2
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(515 171 500 400))
+\a nrResizeWindow(cdsLibEditor list(515 171 720 514))
+\a nrResizeWindow(cdsLibEditor list(426 31 720 514))
+\a nrListItemAction(cdsLibEditor->mainTable 13 0)
+\o Active cell: 13 0 "analog"
+\a nrListItemAction(cdsLibEditor->mainTable 12 0)
+\o Active cell: 12 0 "digital"
+\a cdsLibEditor->editDeletePopupButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 12 1)
+\o Active cell: 12 1 "/mnt/class_data/ecec472_572/group8/cadence/digital"
+\a nrListItemAction(cdsLibEditor->mainTable 11 1)
+\o Active cell: 11 1 "/home/njs82@drexel.edu/ECEC472/NCSU_FreePDK45/ECEC472_Lib"
+\a nrListItemAction(cdsLibEditor->mainTable 12 0)
+\o Active cell: 12 0 "analog"
+\a cdsLibEditor->editDeletePopupButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 12 1)
+\o Active cell: 12 1 "/mnt/class_data/ecec472_572/group8/cadence/analog"
+\a nrListItemAction(cdsLibEditor->mainTable 11 1)
+\o Active cell: 11 1 "/home/njs82@drexel.edu/ECEC472/NCSU_FreePDK45/ECEC472_Lib"
+\a nrListItemAction(cdsLibEditor->mainTable 10 0)
+\o Active cell: 10 0 "ECEC471_Lib"
+\a cdsLibEditor->editDeletePopupButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 10 1)
+\o Active cell: 10 1 "/home/njs82@drexel.edu/ECEC471/NCSU_FreePDK45/ECEC471_Lib"
+\a nrListItemAction(cdsLibEditor->mainTable 9 1)
+\o Active cell: 9 1 "/opt/cadence/ASSURA41/tools/assura/etc/avtech/avTech"
+\a nrListItemAction(cdsLibEditor->mainTable 10 0)
+\o Active cell: 10 0 "ECEC472_Lib"
+\a cdsLibEditor->editDeletePopupButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 10 1)
+\o Active cell: 10 1 "/home/njs82@drexel.edu/ECEC472/NCSU_FreePDK45/ECEC472_Lib"
+\a nrListItemAction(cdsLibEditor->mainTable 9 1)
+\o Active cell: 9 1 "/opt/cadence/ASSURA41/tools/assura/etc/avtech/avTech"
+\a nrListItemAction(cdsLibEditor->mainTable 10 0)
+\o Active cell: 10 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
+\a cdsLibEditor->fileExitButton->value = t
+\a nrSetWindowVisibility(cdsLibEditor "hide")
+\a exit(0)
