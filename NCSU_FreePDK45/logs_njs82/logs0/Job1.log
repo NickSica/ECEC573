@@ -11,6 +11,7 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
+<<<<<<< HEAD
 	State Name   = ECEC573_Lib:power_delivery_network:1_state1_Interactive.0
 	Results DB   = /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.0.rdb
 	Results Dir  = /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.0/1/ECEC573_Lib:power_delivery_network:1
@@ -22,6 +23,23 @@
 
 *Info*    Spectre controlMode is set "batch".
 
+=======
+	State Name   = ECEC573_Lib:power_delivery_network:1_state1_Interactive.3
+	Results DB   = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.3.rdb
+	Results Dir  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.3/1/ECEC573_Lib:power_delivery_network:1
+	Results Loc  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data
+	Project Dir  = /home/njs82/simulation
+	Setup DB loc = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl
+	File Encoding = 0
+
+
+WARNING (ADE-7002): The Spectre run mode needs to be 'batch' when Spectre high-performance mode is enabled. Automatically
+            setting the run mode to 'batch'.
+
+*Info*    The auto suspension is disabled.
+
+Loading monte.cxt 
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 
 
 
@@ -34,6 +52,7 @@ Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
+<<<<<<< HEAD
 Setting var ACMag = "0.37"
 Setting var ACPhase = "0"
 Setting var Freq = "1000000000"
@@ -50,22 +69,50 @@ Setting temp(T) = 27
 
 *Info*    Data Directory    =
           /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.0/1/ECEC573_Lib:power_delivery_network:1
+=======
+Setting var decap = "1a"
+Setting var decap15 = "1a"
+Setting var decap30 = "1a"
+Setting var decap5 = "1a"
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.3/1/ECEC573_Lib:power_delivery_network:1/netlist
+
+
+*Info*    Data Directory    =
+          /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.3/1/ECEC573_Lib:power_delivery_network:1
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 
 
 *Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
+<<<<<<< HEAD
 Initializing the control file using cp:
     cp /opt/cadence/IC616/tools.lnx86/dfII/etc/si/control.spectre /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.0/1/ECEC573_Lib:power_delivery_network:1/netlist/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
 Begin Incremental Netlisting Jun  1 11:37:13 2022
 End netlisting Jun  1 11:37:23 2022
+=======
+Loading seCore.cxt 
+Initializing the control file using cp:
+    cp /home/tools/cadence/install/IC617/tools.lnx86/dfII/etc/si/control.spectre /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.3/1/ECEC573_Lib:power_delivery_network:1/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Jun  1 15:50:15 2022
+End netlisting Jun  1 15:50:20 2022
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 
 Netlisting Statistics:
 	Number of components: 36248
 
+<<<<<<< HEAD
 	Elapsed time:         11.0s (3295.27/s)
+=======
+	Elapsed time:          5.0s (7249.60/s)
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
@@ -74,7 +121,11 @@ compose simulator input file...
 *Info*    Running simulation on testbench [
           ECEC573_Lib:power_delivery_network:1 ] for Point ID (0 1).
 
+<<<<<<< HEAD
 Delete psf data in /home/njs82@drexel.edu/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.0/1/ECEC573_Lib:power_delivery_network:1/psf.
+=======
+Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/Interactive.3/1/ECEC573_Lib:power_delivery_network:1/psf.
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 compose simulator input file...
       ...successful.
 start simulator if needed...

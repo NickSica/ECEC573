@@ -1,0 +1,17 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Jun  2 17:41:32 2022 
+Best design point: 1
+Design specs: 
+	ECEC573_Lib:power_delivery_network:1	corner	Nominal - 
+Design parameters: 
+	decap15		1a
+	decap30		1a
+	decap		1a
+	decap5		1a
+
+Interactive.16
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.16 completed. 
+Current time: Thu Jun  2 17:43:20 2022 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 analysis(tran fields dynHeadListBox) (nil choices ("#         time                     value") value nil)
 analysis(tran fields dynParam) ""
 analysis(tran fields dynParamB) nil
@@ -6,6 +7,77 @@ analysis(tran fields dynchoice) "Parameter file"
 analysis(tran fields dynparam) ""
 analysis(tran fields enable) (t)
 analysis(tran fields errpreset) ""
+=======
+analysis(noise fields center) ""
+analysis(noise fields dec) ""
+analysis(noise fields designVar) ""
+analysis(noise fields dev) ""
+analysis(noise fields deviceParam) ""
+analysis(noise fields enable) (t)
+analysis(noise fields freq) ""
+analysis(noise fields inIsrc) "/I4/I6394"
+analysis(noise fields inPort) ""
+analysis(noise fields inType) "voltage"
+analysis(noise fields inVsrc) "/V1"
+analysis(noise fields incrType) "Automatic"
+analysis(noise fields iprobe) "/V1"
+analysis(noise fields lin) ""
+analysis(noise fields log) ""
+analysis(noise fields mod) ""
+analysis(noise fields modelParam) ""
+analysis(noise fields n) "/I7/net06244"
+analysis(noise fields oprobe) "/I4/I6394"
+analysis(noise fields outType) "probe"
+analysis(noise fields p) "/I7/net06246"
+analysis(noise fields param) ""
+analysis(noise fields rangeType) "Start-Stop"
+analysis(noise fields separatenoise) ""
+analysis(noise fields separatenoiseUI) nil
+analysis(noise fields span) ""
+analysis(noise fields start) "10"
+analysis(noise fields step) ""
+analysis(noise fields stepTypeLin) "Step Size"
+analysis(noise fields stepTypeLog) "Points Per Decade"
+analysis(noise fields stop) "10G"
+analysis(noise fields sweep) "Frequency"
+analysis(noise fields sweepChange) nil
+analysis(noise fields useDiscrete) nil
+analysis(noise fields values) nil
+analysis(noise options additionalParams) ""
+analysis(noise options annotate) "status"
+analysis(noise options force) ""
+analysis(noise options nestlvl) ""
+analysis(noise options oppoint) ""
+analysis(noise options prevoppoint) ""
+analysis(noise options readforce) ""
+analysis(noise options readns) ""
+analysis(noise options restart) ""
+analysis(noise options save) ""
+analysis(noise options separatenoise) ""
+analysis(tran fields analysisSetting) ""
+analysis(tran fields binnum) "16"
+analysis(tran fields calcStop) ""
+analysis(tran fields dynHeadListBox) (nil choices ("#         time                     value") value nil)
+analysis(tran fields dynParam) ""
+analysis(tran fields dynParamB) nil
+analysis(tran fields dynParamChoice) "User-defined"
+analysis(tran fields dynParamInput) ""
+analysis(tran fields dynParamListBox) (nil choices nil value nil)
+analysis(tran fields dynParamSetChoice) "User-defined"
+analysis(tran fields dynParamSetInput) ""
+analysis(tran fields dynParamSetParam) nil
+analysis(tran fields dynParamSetTab) nil
+analysis(tran fields dynParamTab) nil
+analysis(tran fields dynamicChoice) "File"
+analysis(tran fields dynamicParameter) "Parameter"
+analysis(tran fields dynchoice) "Parameter file"
+analysis(tran fields dynparam) ""
+analysis(tran fields enable) (t)
+analysis(tran fields enableMinFreq) ""
+analysis(tran fields enablepsdstarttime) ""
+analysis(tran fields errpreset) ""
+analysis(tran fields fundFreq) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 analysis(tran fields noisefmax) ""
 analysis(tran fields noisefmin) ""
 analysis(tran fields noiseinst) "/I4/I6394"
@@ -20,15 +92,30 @@ analysis(tran fields paramTime) ""
 analysis(tran fields paramValue) ""
 analysis(tran fields param_file) ""
 analysis(tran fields param_vec) nil
+<<<<<<< HEAD
 analysis(tran fields stop) "100n"
 analysis(tran fields tranNoise) ""
 analysis(tran fields tranNoiseMultiRuns) ""
+=======
+analysis(tran fields psdmaxfreq) ""
+analysis(tran fields psdminfreq) ""
+analysis(tran fields psdstarttime) ""
+analysis(tran fields stop) "25n"
+analysis(tran fields tranNoise) ""
+analysis(tran fields tranNoiseMultiRuns) ""
+analysis(tran fields trannoisemethod) "default"
+analysis(tran fields transtrobe) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 analysis(tran options FinalOpOtherParameters) ""
 analysis(tran options InfotimesOtherParameters) ""
 analysis(tran options acnames) nil
 analysis(tran options actimes) nil
 analysis(tran options additionalParams) ""
 analysis(tran options annotate) "status"
+<<<<<<< HEAD
+=======
+analysis(tran options annotatedigits) "4"
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 analysis(tran options captab) nil
 analysis(tran options cmin) ""
 analysis(tran options compiabstol) ""
@@ -46,6 +133,10 @@ analysis(tran options flushofftime) ""
 analysis(tran options flushpoints) ""
 analysis(tran options flushtime) ""
 analysis(tran options ic) ""
+<<<<<<< HEAD
+=======
+analysis(tran options infoname) nil
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 analysis(tran options infotimes) nil
 analysis(tran options linearic) ""
 analysis(tran options lteratio) ""
@@ -75,6 +166,10 @@ analysis(tran options sort) "name"
 analysis(tran options start) ""
 analysis(tran options step) ""
 analysis(tran options strobedelay) ""
+<<<<<<< HEAD
+=======
+analysis(tran options strobeoutput) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 analysis(tran options strobeperiod) ""
 analysis(tran options threshold) "0.0"
 analysis(tran options timed) nil

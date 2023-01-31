@@ -10,6 +10,12 @@ DEFINE NangateOpenCellLibrary $NANGATE/Back_End/virtuoso/NangateOpenCellLibrary
 DEFINE LowPowerOpenCellLibrary $NANGATE/Low_Power/Back_End/virtuoso/LowPowerOpenCellLibrary
 DEFINE OSU_TechLib_FreePDK45 $PDK_DIR/osu_soc/lib/freepdk45_cells
 
+<<<<<<< HEAD
 DEFINE avTech /opt/cadence/ASSURA41/tools/assura/etc/avtech/avTech
 #Removed by ddDeleteObj: DEFINE ECEC573_Lib /home/njs82@drexel.edu/ECEC472/NCSU_FreePDK45/ECEC573_Lib
 DEFINE ECEC573_Lib /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/ECEC573_Lib
+=======
+DEFINE avTech $ASSURA_HOME/tools/assura/etc/avtech/avTech
+#Removed by ddDeleteObj: DEFINE ECEC573_Lib /home/njs82@drexel.edu/ECEC472/NCSU_FreePDK45/ECEC573_Lib
+DEFINE ECEC573_Lib /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2

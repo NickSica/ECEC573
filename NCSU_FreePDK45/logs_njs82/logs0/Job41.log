@@ -1,0 +1,899 @@
+\# Program start time:     UTC 2022.06.03 21:46:45.804
+\# Local time: EDT (UTC-04:00) 2022.06.03 17:46:45.804
+\o Program:		@(#)$CDS: virtuoso version 6.1.7-64b 12/16/2018 07:36 (sjfhw317) $
+\o Hierarchy:		/home/tools/cadence/install/IC617/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.7-64b.500.23  (64-bit addresses)
+\# Command line:	/home/tools/cadence/install/IC617/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso10804 -mpshost bertha -davinciService DaVinciService_10804_1654112216 -log /home/njs82/ECEC573/NCSU_FreePDK45/logs_njs82/logs0/Job41.log -licenseLockFileName /home/njs82/ECEC573/NCSU_FreePDK45/.tmp_njs82/.bertha_10804 -nograph -nostdin -axlChildIdFlag 41
+\# Host name (type):	bertha (x86_64)
+\# Operating system:	Linux 3.10.0-1127.el7.x86_64 #1 SMP Tue Mar 31 23:36:51 UTC 2020
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:95 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server, PID 91851)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x0, current max 0x3ffffa (4194298)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        484 MB
+\# Available memory:	     31,922 MB
+\# System memory:	    147,774 MB
+\# Maximum memory size:	    147,365 MB
+\# Max mem available:	     31,996 MB
+\# Initial memory used:	         75 MB
+\#        process size:	      1,051 MB
+\# Thread usage limits (effective/default):	maxthreads 4096/4096 maxload 32.00/32.00
+\# Qt version:		4.8.5
+\# Window Manager:	other
+\# User Name:		njs82
+\o Working Directory:	bertha:/home/njs82/ECEC573/NCSU_FreePDK45
+\# Process Id:		91863
+\o 
+\o COPYRIGHT (C) 1992-2018  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2018  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\# Memory report: using         185 MB, process size 1,281 MB at UTC 2022.06.03 21:46:52.314
+\o *INFO* (icLic-303) virtuoso: PID=91863, Child Mode is true, ICPR Mode is true, Registration Timeout is 180 seconds, Communication Timeout is 180 seconds.
+\w *WARNING* The directory: '/home/njs82/ECEC573/NCSU_FreePDK45/$NANGATE/Low_Power/Back_End/virtuoso/LowPowerOpenCellLibrary' does not exist
+\w 	but was defined in libFile '/home/njs82/ECEC573/NCSU_FreePDK45/cds.lib' for Lib 'LowPowerOpenCellLibrary'.
+\w *WARNING* The directory: '/home/njs82/ECEC573/NCSU_FreePDK45/$NANGATE/Back_End/virtuoso/NangateOpenCellLibrary' does not exist
+\w 	but was defined in libFile '/home/njs82/ECEC573/NCSU_FreePDK45/cds.lib' for Lib 'NangateOpenCellLibrary'.
+\o //
+\o //  Calibre Skill Interface * (v2015.4_33.23) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /home/tech/NCSU_pdks/FreePDK45/ncsu_basekit/cdssetup/cdsenv for tool layout
+\o ---------------------------------------------------------------------------
+\o Welcome to the FreePDK 45nm Free, Open-Source Process Design Kit
+\o 
+\o This initiative is brought to you by the Semiconductor Research
+\o Corporation (SRC), the National Science Foundation (NSF), Silicon
+\o Integration Initiative (Si2), Mentor Graphics, and Synopsys.
+\o 
+\o This version of the kit was created by Rhett Davis, Paul Franzon,
+\o Michael Bucher, Sunil Basavarajaiah, and Harun Demircioglu
+\o of North Carolina State University, and James Stine and Ivan Castellanos
+\o of Oklahoma State University.
+\o 
+\o Contributions and modifications to this kit are welcomed and encouraged.
+\o 
+\o Copyright 2007 - W. Rhett Davis, Paul Franzon, Michael Bucher,
+\o                  and Sunil Basavarajaiah, North Carolina State University
+\o Copyright 2008 - W. Rhett Davis, Michael Bucher, and Sunil Basavarajaiah,
+\o                  North Carolina State University (ncsu_basekit subtree)
+\o                  James Stine, and Ivan Castellanos,
+\o                  and Oklahoma State University (osu_soc subtree)
+\o Copyright 2011 - W. Rhett Davis, and Harun Demircioglu,
+\o                  North Carolina State University
+\o 
+\o Licensed under the Apache License, Version 2.0 (the "License");
+\o you may not use this file except in compliance with the License.
+\o You may obtain a copy of the License at
+\o 
+\o     http://www.apache.org/licenses/LICENSE-2.0
+\o 
+\o Unless required by applicable law or agreed to in writing, software
+\o distributed under the License is distributed on an "AS IS" BASIS,
+\o WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+\o See the License for the specific language governing permissions and
+\o limitations under the License.
+\o ---------------------------------------------------------------------------
+\o 
+\o Done loading FreePDK customizations.
+\e *Error* lineread/read: syntax error encountered in input at line 67 column 12 in file .cdsinit
+\o *Info*    Client has finished starting ... 
+\o 
+\p > 
+\o Loading pe.cxt 
+\a _treeSetOpcGUI(t)
+\r t
+\o Loading vqp.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = ECEC573_Lib
+\o 	Cell         = power_delivery_network
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ECEC573_Lib:power_delivery_network:1_state1_decap_test.3
+\o 	Results DB   = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3.rdb
+\o 	Results Dir  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/1/ECEC573_Lib:power_delivery_network:1
+\o 	Results Loc  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data
+\o 	Project Dir  = /home/njs82/simulation
+\o 	Setup DB loc = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o *INFO* (icLic-304) Start to connect to parent process (session=virtuoso10804, host=bertha). Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o *INFO* (icLic-305) Step 1: Connecting to parent. Spent time is 0 seconds.
+\o *INFO* (icLic-309) The registration of the child 91863 within 90 seconds is being processed ...
+\o *INFO* (icLic-310) The result of registration is true. Spend time is 0 seconds.
+\o *INFO* (icLic-308) The end of connection. Result is true. Total spent time is 0 seconds.
+\o Loading viva.cxt 
+\w *WARNING* The directory: '/home/njs82/ECEC573/NCSU_FreePDK45/$NANGATE/Low_Power/Back_End/virtuoso/LowPowerOpenCellLibrary' does not exist
+\w 	but was defined in libFile '/home/njs82/ECEC573/NCSU_FreePDK45/cds.lib' for Lib 'LowPowerOpenCellLibrary'.
+\w *WARNING* The directory: '/home/njs82/ECEC573/NCSU_FreePDK45/$NANGATE/Back_End/virtuoso/NangateOpenCellLibrary' does not exist
+\w 	but was defined in libFile '/home/njs82/ECEC573/NCSU_FreePDK45/cds.lib' for Lib 'NangateOpenCellLibrary'.
+\w *WARNING* ddUpdateLibList: It appears that you are trying to run an OA executable on CDB data. Library 'avTech' contains file '/home/tools/cadence/install/ASSURA41/tools.lnx86/assura/etc/avtech/avTech/prop.xx' which is CDB data. If this is an OA library, this file needs to be removed. If this is a CDB library, use cdb2oa to convert your data from CDB to OA and then try again.
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\# Available memory:         31,833 MB at UTC 2022.06.03 21:46:56.117
+\# Memory report: Maximum memory size now 32,101 MB at UTC 2022.06.03 21:46:56.117
+\# Thread usage report: 33 active threads, active load 1.00 at UTC 2022.06.03 21:46:56.117
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\# Memory report: using         307 MB, process size 1,407 MB at UTC 2022.06.03 21:46:57.123
+\o WARNING (ADE-7002): The Spectre run mode needs to be 'batch' when Spectre high-performance mode is enabled. Automatically
+\o             setting the run mode to 'batch'.
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (26 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Freq = "600M"
+\o Setting var Freq1 = "500M"
+\o Setting var Freq2 = "1G"
+\o Setting var Freq3 = "750M"
+\o Setting var decap = "1e-18"
+\o Setting var decap15 = "1e-18"
+\o Setting var decap30 = "1e-18"
+\o Setting var decap5 = "1e-18"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/1/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/1/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (26 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o Begin Incremental Netlisting Jun  3 17:46:57 2022
+\o WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
+\o compared to the last session in the current run directory. The netlist(s)
+\o generated in the last netlisting session cannot be reused for incremental
+\o netlisting. Therefore re-netlisting the design.
+\o 
+\o End netlisting Jun  3 17:47:02 2022
+\o 
+\o Netlisting Statistics:
+\o 	Number of components: 36444
+\o 
+\o 	Elapsed time:          5.0s (7288.80/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (26 1).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/1/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: Maximum memory size now 30,606 MB at UTC 2022.06.03 21:47:26.118
+\# Memory report: Maximum memory size now 31,212 MB at UTC 2022.06.03 21:48:56.123
+\# Memory report: Maximum memory size now 31,900 MB at UTC 2022.06.03 21:49:26.125
+\# Memory report: Maximum memory size now 31,234 MB at UTC 2022.06.03 21:50:56.130
+\# Memory report: Maximum memory size now 30,543 MB at UTC 2022.06.03 21:52:26.133
+\# Memory report: Maximum memory size now 29,871 MB at UTC 2022.06.03 21:55:36.141
+\# Memory report: Maximum memory size now 30,591 MB at UTC 2022.06.03 21:56:06.144
+\# Memory report: Maximum memory size now 29,835 MB at UTC 2022.06.03 21:58:06.148
+\# Available memory:         28,671 MB at UTC 2022.06.03 21:59:26.152
+\# Memory report: Maximum memory size now 29,019 MB at UTC 2022.06.03 21:59:26.152
+\# Memory report: Maximum memory size now 28,378 MB at UTC 2022.06.03 22:01:36.157
+\# Memory report: Maximum memory size now 27,384 MB at UTC 2022.06.03 22:02:36.160
+\# Memory report: Maximum memory size now 26,832 MB at UTC 2022.06.03 22:04:06.164
+\# Available memory:         25,966 MB at UTC 2022.06.03 22:04:46.165
+\# Memory report: Maximum memory size now 25,826 MB at UTC 2022.06.03 22:05:06.243
+\# Memory report: Maximum memory size now 25,093 MB at UTC 2022.06.03 22:07:36.434
+\# Memory report: Maximum memory size now 25,855 MB at UTC 2022.06.03 22:08:36.518
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\# Memory report: using         533 MB, process size 1,648 MB at UTC 2022.06.03 22:09:09.197
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: using       1,325 MB, process size 2,439 MB at UTC 2022.06.03 22:09:15.007
+\# Memory report: Maximum memory size now 28,731 MB at UTC 2022.06.03 22:09:21.069
+\# Memory report: using       2,304 MB, process size 3,418 MB at UTC 2022.06.03 22:09:21.069
+\o ERROR (WIA-1006): Unable to plot expression <IT("/I7/vdd_120")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\o 
+\o *Info*    Run complete for Point ID (26 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (26 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var decap = "200e-15"
+\o Setting var decap5 = "200e-15"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/2/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/2/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (26 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 18:09:39 2022
+\o End netlisting Jun  3 18:09:40 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (26 2).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/2/ECEC573_Lib:power_delivery_network:1/psf.
+\# Memory report: Maximum memory size now 30,110 MB at UTC 2022.06.03 22:09:41.155
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Available memory:         28,433 MB at UTC 2022.06.03 22:10:01.156
+\# Memory report: Maximum memory size now 29,331 MB at UTC 2022.06.03 22:10:11.156
+\# Memory report: Maximum memory size now 28,689 MB at UTC 2022.06.03 22:10:21.157
+\# Available memory:         25,832 MB at UTC 2022.06.03 22:16:31.155
+\# Memory report: Maximum memory size now 28,018 MB at UTC 2022.06.03 22:16:31.155
+\# Memory report: Maximum memory size now 28,698 MB at UTC 2022.06.03 22:16:51.156
+\# Memory report: Maximum memory size now 28,013 MB at UTC 2022.06.03 22:19:41.164
+\# Memory report: Maximum memory size now 28,690 MB at UTC 2022.06.03 22:20:01.165
+\# Memory report: Maximum memory size now 28,011 MB at UTC 2022.06.03 22:24:41.177
+\# Memory report: Maximum memory size now 28,580 MB at UTC 2022.06.03 22:25:21.179
+\# Memory report: Maximum memory size now 27,918 MB at UTC 2022.06.03 22:27:31.185
+\# Available memory:         28,423 MB at UTC 2022.06.03 22:32:11.256
+\# Memory report: Maximum memory size now 30,609 MB at UTC 2022.06.03 22:32:11.256
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o ERROR (WIA-1006): Unable to plot expression <IT("/I7/vdd_120")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\o 
+\o *Info*    Run complete for Point ID (26 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (26 3) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var decap = "2e-12"
+\o Setting var decap5 = "2e-12"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/3/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/3/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (26 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 18:32:27 2022
+\o End netlisting Jun  3 18:32:29 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   2.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (26 3).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.3/3/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 29,597 MB at UTC 2022.06.03 22:32:43.289
+\# Memory report: Maximum memory size now 28,941 MB at UTC 2022.06.03 22:32:53.290
+\# Available memory:         25,635 MB at UTC 2022.06.03 22:33:03.290
+\# Memory report: Maximum memory size now 27,928 MB at UTC 2022.06.03 22:33:03.290
+\# Memory report: Maximum memory size now 28,486 MB at UTC 2022.06.03 22:33:43.292
+\# Memory report: Maximum memory size now 27,850 MB at UTC 2022.06.03 22:36:13.299
+\# Memory report: Maximum memory size now 28,417 MB at UTC 2022.06.03 22:36:53.301
+\# Memory report: Maximum memory size now 27,844 MB at UTC 2022.06.03 22:39:03.112
+\# Memory report: Maximum memory size now 26,900 MB at UTC 2022.06.03 22:45:13.128
+\# Memory report: Maximum memory size now 26,052 MB at UTC 2022.06.03 22:45:23.128
+\# Memory report: Maximum memory size now 26,706 MB at UTC 2022.06.03 22:48:03.136
+\# Memory report: Maximum memory size now 26,023 MB at UTC 2022.06.03 22:51:23.143
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: Maximum memory size now 28,605 MB at UTC 2022.06.03 22:53:27.423
+\o ERROR (WIA-1006): Unable to plot expression <IT("/I7/vdd_120")>
+\o            because it does not evaluate to an object that can be plotted, like a waveform or
+\o            parametric wave. See the Visualization & Analysis Tool documentation for information
+\o            about the types of objects that can be plotted in Visualization & Analysis Tool. Only
+\o            the expressions that evaluate to those objects can be plotted.
+\o 
+\o *Info*    Run complete for Point ID (26 3) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = ECEC573_Lib
+\o 	Cell         = power_delivery_network
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ECEC573_Lib:power_delivery_network:1_state1_decap_test.4
+\o 	Results DB   = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4.rdb
+\o 	Results Dir  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/1/ECEC573_Lib:power_delivery_network:1
+\o 	Results Loc  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data
+\o 	Project Dir  = /home/njs82/simulation
+\o 	Setup DB loc = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (27 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Freq = "600M"
+\o Setting var Freq1 = "500M"
+\o Setting var Freq2 = "1G"
+\o Setting var Freq3 = "750M"
+\o Setting var decap = "1e-18"
+\o Setting var decap15 = "1e-18"
+\o Setting var decap30 = "1e-18"
+\o Setting var decap5 = "1e-18"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/1/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/1/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (27 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 18:53:51 2022
+\o End netlisting Jun  3 18:53:53 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   2.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (27 1).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/1/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 27,657 MB at UTC 2022.06.03 22:54:07.490
+\# Memory report: Maximum memory size now 27,031 MB at UTC 2022.06.03 22:54:27.491
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (27 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var decap = "200e-15"
+\o Setting var decap5 = "200e-15"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/2/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/2/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (27 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 18:55:17 2022
+\o End netlisting Jun  3 18:55:18 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (27 2).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/2/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 28,177 MB at UTC 2022.06.03 22:55:27.137
+\# Memory report: Maximum memory size now 27,373 MB at UTC 2022.06.03 22:55:47.138
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (27 3) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var decap = "2e-12"
+\o Setting var decap5 = "2e-12"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/3/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/3/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (27 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 18:56:44 2022
+\o End netlisting Jun  3 18:56:44 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (27 3).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.4/3/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 29,005 MB at UTC 2022.06.03 22:56:47.140
+\# Memory report: Maximum memory size now 28,406 MB at UTC 2022.06.03 22:56:57.141
+\# Memory report: Maximum memory size now 27,574 MB at UTC 2022.06.03 22:57:17.142
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 3) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 29,488 MB at UTC 2022.06.03 22:58:17.144
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = ECEC573_Lib
+\o 	Cell         = power_delivery_network
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ECEC573_Lib:power_delivery_network:1_state1_decap_test.5
+\o 	Results DB   = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5.rdb
+\o 	Results Dir  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/1/ECEC573_Lib:power_delivery_network:1
+\o 	Results Loc  = /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data
+\o 	Project Dir  = /home/njs82/simulation
+\o 	Setup DB loc = /home/njs82/ECEC573/NCSU_FreePDK45/ECEC573_Lib/power_delivery_network/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (28 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Freq = "600M"
+\o Setting var Freq1 = "500M"
+\o Setting var Freq2 = "1G"
+\o Setting var Freq3 = "750M"
+\o Setting var decap = "1e-18"
+\o Setting var decap15 = "1e-18"
+\o Setting var decap30 = "1e-18"
+\o Setting var decap5 = "1e-18"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/1/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/1/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (28 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 19:01:14 2022
+\o End netlisting Jun  3 19:01:14 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (28 1).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/1/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 28,372 MB at UTC 2022.06.03 23:01:47.153
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (28 1) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (28 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var decap = "200e-15"
+\o Setting var decap5 = "200e-15"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/2/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/2/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (28 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 19:02:40 2022
+\o End netlisting Jun  3 19:02:41 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (28 2).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/2/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 29,900 MB at UTC 2022.06.03 23:02:47.155
+\# Memory report: Maximum memory size now 28,948 MB at UTC 2022.06.03 23:03:07.156
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (28 2) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (28 3) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var decap = "2e-12"
+\o Setting var decap5 = "2e-12"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/3/ECEC573_Lib:power_delivery_network:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/3/ECEC573_Lib:power_delivery_network:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (28 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Jun  3 19:04:04 2022
+\o End netlisting Jun  3 19:04:05 2022
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ] for Point ID (28 3).
+\o 
+\o Delete psf data in /home/njs82/simulation/ECEC573_Lib/power_delivery_network/adexl/results/data/decap_test.5/3/ECEC573_Lib:power_delivery_network:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Available memory:         28,384 MB at UTC 2022.06.03 23:04:07.159
+\# Memory report: Maximum memory size now 30,734 MB at UTC 2022.06.03 23:04:07.159
+\# Memory report: Maximum memory size now 30,066 MB at UTC 2022.06.03 23:04:27.160
+\# Memory report: Maximum memory size now 29,448 MB at UTC 2022.06.03 23:04:47.161
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (28 3) on testbench [
+\o           ECEC573_Lib:power_delivery_network:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 31,161 MB at UTC 2022.06.03 23:05:37.164
+\# Memory report: Maximum memory size now 31,798 MB at UTC 2022.06.03 23:06:37.166
+\# Memory report: Maximum memory size now 32,440 MB at UTC 2022.06.03 23:07:37.169
+\# Memory report: Maximum memory size now 33,166 MB at UTC 2022.06.03 23:08:27.171
+\# Available memory:         31,071 MB at UTC 2022.06.03 23:08:47.172
+\# Memory report: Maximum memory size now 33,894 MB at UTC 2022.06.03 23:09:17.173
+\o Job 41 timed out after no activity in 300 seconds.
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\# Memory report: on exit          2,349 MB, process size 3,464 MB at UTC 2022.06.03 23:10:30.923
+\# Memory report: peak usage       2,349 MB, process size 3,464 MB

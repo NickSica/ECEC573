@@ -1,12 +1,20 @@
 savedComponent = (let
+<<<<<<< HEAD
 (tmp1 tmp2 tmp3 tmp4 tmp5)
+=======
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8)
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (unless tmp1
 tmp1 = make_sevVariableStruct()
 )
 (unless tmp1
 tmp1 = (ncons nil)
 )
+<<<<<<< HEAD
 tmp1->name = "Ipk"
+=======
+tmp1->name = "Freq1"
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 tmp1->expression = ""
 tmp1->index = 1
 (unless tmp2
@@ -15,8 +23,13 @@ tmp2 = make_sevVariableStruct()
 (unless tmp2
 tmp2 = (ncons nil)
 )
+<<<<<<< HEAD
 tmp2->name = "decap15"
 tmp2->expression = "1a"
+=======
+tmp2->name = "Freq2"
+tmp2->expression = ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 tmp2->index = 2
 (unless tmp3
 tmp3 = make_sevVariableStruct()
@@ -24,8 +37,13 @@ tmp3 = make_sevVariableStruct()
 (unless tmp3
 tmp3 = (ncons nil)
 )
+<<<<<<< HEAD
 tmp3->name = "decap30"
 tmp3->expression = "1a"
+=======
+tmp3->name = "Freq3"
+tmp3->expression = ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 tmp3->index = 3
 (unless tmp4
 tmp4 = make_sevVariableStruct()
@@ -33,8 +51,13 @@ tmp4 = make_sevVariableStruct()
 (unless tmp4
 tmp4 = (ncons nil)
 )
+<<<<<<< HEAD
 tmp4->name = "decap"
 tmp4->expression = "2p"
+=======
+tmp4->name = "Freq"
+tmp4->expression = ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 tmp4->index = 4
 (unless tmp5
 tmp5 = make_sevVariableStruct()
@@ -42,8 +65,42 @@ tmp5 = make_sevVariableStruct()
 (unless tmp5
 tmp5 = (ncons nil)
 )
+<<<<<<< HEAD
 tmp5->name = "decap5"
 tmp5->expression = "2p"
 tmp5->index = 5
 list(tmp1 tmp2 tmp3 tmp4 tmp5)
+=======
+tmp5->name = "decap15"
+tmp5->expression = "1a"
+tmp5->index = 5
+(unless tmp6
+tmp6 = make_sevVariableStruct()
+)
+(unless tmp6
+tmp6 = (ncons nil)
+)
+tmp6->name = "decap30"
+tmp6->expression = "1a"
+tmp6->index = 6
+(unless tmp7
+tmp7 = make_sevVariableStruct()
+)
+(unless tmp7
+tmp7 = (ncons nil)
+)
+tmp7->name = "decap"
+tmp7->expression = "2p"
+tmp7->index = 7
+(unless tmp8
+tmp8 = make_sevVariableStruct()
+)
+(unless tmp8
+tmp8 = (ncons nil)
+)
+tmp8->name = "decap5"
+tmp8->expression = "2p"
+tmp8->index = 8
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8)
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 )

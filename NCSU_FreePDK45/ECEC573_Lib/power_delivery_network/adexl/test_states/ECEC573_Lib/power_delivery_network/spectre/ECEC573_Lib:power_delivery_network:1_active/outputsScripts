@@ -1,7 +1,11 @@
 _outputList = nil
  _envSaveOptions = nil
 _envSaveOptions = (let
+<<<<<<< HEAD
 (tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24)
+=======
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38)
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 tmp1 = (let
 (tmp1 tmp2)
 tmp1 = 'extremesInfo
@@ -196,53 +200,168 @@ list(tmp1 tmp2)
 )
 tmp17 = (let
 (tmp1 tmp2)
-tmp1 = 'saveahdlvars
-tmp2 = "all"
+<<<<<<< HEAD
+=======
+tmp1 = 'sumInfo
 list(tmp1 tmp2)
 )
 tmp18 = (let
 (tmp1 tmp2)
-tmp1 = 'useprobes
-tmp2 = ""
+tmp1 = 'time_window
 list(tmp1 tmp2)
 )
 tmp19 = (let
 (tmp1 tmp2)
-tmp1 = 'subcktprobelvl
+tmp1 = 'signalNames
 tmp2 = ""
 list(tmp1 tmp2)
 )
 tmp20 = (let
 (tmp1 tmp2)
-tmp1 = 'currents
-tmp2 = "all"
+tmp1 = 'timeWindow
+tmp2 = ""
 list(tmp1 tmp2)
 )
 tmp21 = (let
 (tmp1 tmp2)
-tmp1 = 'nestlvl
+tmp1 = 'timeWindLabel
 tmp2 = ""
 list(tmp1 tmp2)
 )
 tmp22 = (let
 (tmp1 tmp2)
+tmp1 = 'enableTimeWindowSetup
+list(tmp1 tmp2)
+)
+tmp23 = (let
+(tmp1 tmp2)
+tmp1 = 'timewindFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp24 = (let
+(tmp1 tmp2)
+tmp1 = 'keepRegPcellLabel
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp25 = (let
+(tmp1 tmp2)
+tmp1 = 'keepRegisteredPcell
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp26 = (let
+(tmp1 tmp2)
+tmp1 = 'clearPcell
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp27 = (let
+(tmp1 tmp2)
+tmp1 = 'savePcellSelect
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp28 = (let
+(tmp1 tmp2)
+tmp1 = 'savePcell
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp29 = (let
+(tmp1 tmp2)
+tmp1 = 'subcktoppoint
+list(tmp1 tmp2)
+)
+tmp30 = (let
+(tmp1 tmp2)
+tmp1 = 'pcellFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp31 = (let
+(tmp1 tmp2)
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
+tmp1 = 'saveahdlvars
+tmp2 = "all"
+list(tmp1 tmp2)
+)
+<<<<<<< HEAD
+tmp18 = (let
+=======
+tmp32 = (let
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
+(tmp1 tmp2)
+tmp1 = 'useprobes
+tmp2 = ""
+list(tmp1 tmp2)
+)
+<<<<<<< HEAD
+tmp19 = (let
+=======
+tmp33 = (let
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
+(tmp1 tmp2)
+tmp1 = 'subcktprobelvl
+tmp2 = ""
+list(tmp1 tmp2)
+)
+<<<<<<< HEAD
+tmp20 = (let
+=======
+tmp34 = (let
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
+(tmp1 tmp2)
+tmp1 = 'currents
+tmp2 = "all"
+list(tmp1 tmp2)
+)
+<<<<<<< HEAD
+tmp21 = (let
+=======
+tmp35 = (let
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
+(tmp1 tmp2)
+tmp1 = 'nestlvl
+tmp2 = ""
+list(tmp1 tmp2)
+)
+<<<<<<< HEAD
+tmp22 = (let
+=======
+tmp36 = (let
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
+(tmp1 tmp2)
 tmp1 = 'pwr
 tmp2 = "all"
 list(tmp1 tmp2)
 )
+<<<<<<< HEAD
 tmp23 = (let
+=======
+tmp37 = (let
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (tmp1 tmp2)
 tmp1 = 'save
 tmp2 = "all"
 list(tmp1 tmp2)
 )
+<<<<<<< HEAD
 tmp24 = (let
+=======
+tmp38 = (let
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (tmp1 tmp2)
 tmp1 = 'saveFrame
 tmp2 = ""
 list(tmp1 tmp2)
 )
+<<<<<<< HEAD
 list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24)
+=======
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38)
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 )
 savedComponent = list( _outputList _envSaveOptions ) 
 _outputList = 'unbound

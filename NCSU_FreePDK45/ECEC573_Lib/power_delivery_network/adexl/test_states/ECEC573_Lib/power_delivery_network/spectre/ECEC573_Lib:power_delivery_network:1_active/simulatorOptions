@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+(opts acDisableAll) nil
+(opts acEnableAll) nil
+(opts acSeverity) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (opts additionalArgs) ""
 (opts ahdllint) ""
 (opts ahdllint_maxwarn) ""
@@ -12,6 +18,15 @@
 (opts cols) "80"
 (opts colslog) ""
 (opts convdbg) ""
+<<<<<<< HEAD
+=======
+(opts dcDisableAll) nil
+(opts dcEnableAll) nil
+(opts dcOpDisableAll) nil
+(opts dcOpEnableAll) nil
+(opts dcOpSeverity) ""
+(opts dcSeverity) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (opts dc_pivot_check) ""
 (opts debug) ""
 (opts diagnose) ""
@@ -26,6 +41,10 @@
 (opts gmin) "1e-12"
 (opts gmin_check) ""
 (opts gmindc) ""
+<<<<<<< HEAD
+=======
+(opts highvoltage) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (opts homotopy) ""
 (opts iabstol) "1e-12"
 (opts iccapcheck) ""
@@ -48,9 +67,21 @@
 (opts minr) ""
 (opts multithread) ""
 (opts narrate) ""
+<<<<<<< HEAD
 (opts nonconv_topnum) ""
 (opts notation) ""
 (opts note) ""
+=======
+(opts noiseDisableAll) nil
+(opts noiseEnableAll) nil
+(opts noiseOffType) (nil nil nil nil nil)
+(opts noiseOnType) (nil nil nil nil nil)
+(opts noiseSeverity) ""
+(opts nonconv_topnum) ""
+(opts notation) ""
+(opts note) ""
+(opts nport_default_passivity) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (opts nportcompress) ""
 (opts nportcompressfiledir) ""
 (opts nportirfiledir) ""
@@ -64,6 +95,12 @@
 (opts pivrel) "1e-3"
 (opts preorder) ""
 (opts printstep) ""
+<<<<<<< HEAD
+=======
+(opts pzDisableAll) nil
+(opts pzEnableAll) nil
+(opts pzSeverity) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (opts quantities) ""
 (opts rabsclamp) ""
 (opts rabsshort) ""
@@ -82,13 +119,30 @@
 (opts sensformat) ""
 (opts senstype) ""
 (opts simstat) ""
+<<<<<<< HEAD
+=======
+(opts spDisableAll) nil
+(opts spEnableAll) nil
+(opts spSeverity) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (opts temp) "27"
 (opts tempeffects) ""
 (opts title) ""
 (opts tmevthmod) ""
 (opts tnom) "27"
 (opts topcheck) ""
+<<<<<<< HEAD
 (opts try_fast_op) ""
+=======
+(opts tranCheckWindows) ""
+(opts tranDisableAll) nil
+(opts tranEnableAll) nil
+(opts tranSeverity) ""
+(opts tranStartTime) ""
+(opts tranStopTime) ""
+(opts try_fast_op) ""
+(opts useprobes) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (opts vabstol) "1e-6"
 (opts value1) ""
 (opts vthmod) ""

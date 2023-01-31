@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (relxOpts aged_data_dir) ""
 (relxOpts aged_var_list) nil
 (relxOpts agingAnalysis) "tran"
@@ -15,6 +16,28 @@
 (relxOpts enableRelxpert) nil
 (relxOpts enableStress) nil
 (relxOpts enableTMIFlow) nil
+=======
+(relxOpts addAdditionalArgumentForTMI) nil
+(relxOpts aged_data_dir) ""
+(relxOpts aged_var_list) nil
+(relxOpts agingPointsType) "Standard aging"
+(relxOpts anaMode) "Reliability"
+(relxOpts anaModeClone) "Reliability"
+(relxOpts degCheckException) ""
+(relxOpts degdatatype) "appendage"
+(relxOpts displayTMIGui) nil
+(relxOpts doADELPostProcess) t
+(relxOpts enableAging) nil
+(relxOpts enableAgingForTMI) t
+(relxOpts enableDegSort) nil
+(relxOpts enableGradualAging) nil
+(relxOpts enableOutputDevDegInFile) "GUI"
+(relxOpts enablePreset) nil
+(relxOpts enableRelXTran) nil
+(relxOpts enableRelxpert) nil
+(relxOpts enableSelfheating) nil
+(relxOpts enableStress) nil
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (relxOpts enabledegdata) nil
 (relxOpts fresh_data_dir) ""
 (relxOpts gaAgePoints) ""
@@ -29,6 +52,7 @@
 (relxOpts gaAlterParamListBox) (nil choices nil value nil)
 (relxOpts gaAlterTime) ""
 (relxOpts gaAlterValue) ""
+<<<<<<< HEAD
 (relxOpts gaInputStressDir) ""
 (relxOpts gaIterationNum) ""
 (relxOpts gaMode) "agepoint"
@@ -37,6 +61,12 @@
 (relxOpts gaSaveSome) ""
 (relxOpts gaSkipFresh) nil
 (relxOpts gaSkipLast) nil
+=======
+(relxOpts gaIterationNum) ""
+(relxOpts gaMode) "agepoint"
+(relxOpts gaSaveResults) "all"
+(relxOpts gaSaveSome) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (relxOpts includeFiles) ""
 (relxOpts mindtemp) ""
 (relxOpts mosAgeDomain) "loglog"
@@ -102,15 +132,25 @@
 (relxOpts mosMinAge) ""
 (relxOpts mosMode) (t t t)
 (relxOpts mosModifyNetlist) nil
+<<<<<<< HEAD
 (relxOpts mosVthMethod) "calculate"
 (relxOpts nativeMode) "Spectre native"
 (relxOpts otherRXOptions) ""
+=======
+(relxOpts mosOutputDevDegInFilePath) ""
+(relxOpts mosOutputSubcktDegInFilePath) ""
+(relxOpts mosVthMethod) "calculate"
+(relxOpts nativeMode) "Spectre native"
+(relxOpts otherRXOptions) ""
+(relxOpts otherTMIRXOptions) ""
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 (relxOpts outputmethod) "single"
 (relxOpts presetAgeLevel) ""
 (relxOpts presetBlock) ""
 (relxOpts presetType) "lifetime"
 (relxOpts presetValue) ""
 (relxOpts relusercmdlineoption) ""
+<<<<<<< HEAD
 (relxOpts relxAnalysisType) "tran"
 (relxOpts relxTranStart) ""
 (relxOpts relxTranStop) ""
@@ -127,3 +167,22 @@
 (relxOpts uriDebugMode) "0"
 (relxOpts uriLibs) ""
 (relxOpts uriMode) "none"
+=======
+(relxOpts relxTranStart) ""
+(relxOpts relxTranStop) ""
+(relxOpts relxpertExecName) "relxpert"
+(relxOpts removeTMIAgeSettingInFresh) nil
+(relxOpts reportModelParamChanged) nil
+(relxOpts saAgeStepOrTotalStep) ""
+(relxOpts saStepType) "Total steps"
+(relxOpts simModeFile) "input.bs0"
+(relxOpts simModeType) "all"
+(relxOpts standardAgeType) "Age points"
+(relxOpts stress_data_dir) ""
+(relxOpts stress_var_list) nil
+(relxOpts tmiAgingType) "TMI Aging"
+(relxOpts tmiMosMode) (t t)
+(relxOpts uriDebugMode) "0"
+(relxOpts uriLibs) ""
+(relxOpts uriMode) "agemos"
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2

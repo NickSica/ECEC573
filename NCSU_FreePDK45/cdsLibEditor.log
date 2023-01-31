@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.6 - CAT33 07/09/2015 16:05 (sjfnl733) $
 \o Sub version:		sub-version  s018 
 \o Arguments:		-cdslib /home/njs82@drexel.edu/ECEC573/NCSU_FreePDK45/cds.lib -mpssession virtuoso1547 -mpshost xunil-03.coe.drexel.edu 
@@ -44,6 +45,31 @@
 \a nrListItemAction(cdsLibEditor->mainTable 10 0)
 \o Active cell: 10 0 ""
 \a cdsLibEditor->fileSaveButton->value = t
+=======
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.7 - CAT35 10/30/2018 21:09 (sjfnl050) $
+\o Sub version:		sub-version  s231 
+\o Arguments:		-cdslib /home/njs82/ECEC573/NCSU_FreePDK45/cds.lib -mpssession virtuoso10804 -mpshost bertha 
+\o Working Directory:	bertha:/home/njs82/ECEC573/NCSU_FreePDK45
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		4.8.5
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(-10 20 500 400))
+\a nrResizeWindow(cdsLibEditor list(-10 20 1100 595))
+\a nrListItemAction(cdsLibEditor->mainTable 7 1)
+\o Active cell: 7 1 "$NANGATE/Low_Power/Back_End/virtuoso/LowPowerOpenCellLibrary"
+\a nrListItemAction(cdsLibEditor->mainTable 6 1)
+\o Active cell: 6 1 "$NANGATE/Back_End/virtuoso/NangateOpenCellLibrary"
+\a nrListItemAction(cdsLibEditor->mainTable 7 1)
+\o Active cell: 7 1 "$NANGATE/Low_Power/Back_End/virtuoso/LowPowerOpenCellLibrary"
+\a nrListItemAction(cdsLibEditor->mainTable 8 1)
+\o Active cell: 8 1 "$PDK_DIR/osu_soc/lib/freepdk45_cells"
+\a nrListItemAction(cdsLibEditor->mainTable 7 1)
+\o Active cell: 7 1 "$NANGATE/Low_Power/Back_End/virtuoso/LowPowerOpenCellLibrary"
+\a nrSetCurrentWindow(cdsLibEditor)
+>>>>>>> 03a104f476a42d5ea68e11cffe3322d1cf3db8e2
 \a cdsLibEditor->fileExitButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
 \a exit(0)
